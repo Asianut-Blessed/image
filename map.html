@@ -1,0 +1,34 @@
+<!-- Structure of a hyperlink -->
+ <A HREF="destination_URL">Clickable text or image</A>
+
+ <!-- Example 1: Link to ISBAT University website -->
+  <A HREF="https://www.isbat.ac.ug">Visit ISBAT University</A>
+
+  <!-- Example 2: Link opens in a new browser tab -->
+   <A HREF="https://www.google.com" TARGET="blank">
+    search on Google
+   </A>
+   <!-- Example 3: Image as a link(no visible border)-->
+    <A HREF="https://www.isbat.ac.ug">
+        <img src="IMG-20240522-WA0102.jpg" border="0" alt="eagle"
+    </A>
+    <H2>Chapter 2: HTML Lists</H2>
+    <A HREF="#chapter2">Go to chapter 2: HTML Lists</A>
+    <A HREF="coursebook.html#chapter2">Chapter 2</A>
+
+<!-- Step 1: Link the image to the map using USEMAP -->
+ <IMG SRC="Spot/class/images WIDITH="400" HEIGHT="450" BORDER="5" USEMAP="#ugandaMap"
+ ALT="Interactive map of Uganda">
+
+ <!-- Step 2: Define the map with the matching NAME --> 
+  <MAP NAME="ugandaMap>"
+     <!-- Northern Region - rectangle zone -->
+    <AREA SHAPE="RECT" COORDS="80,10,280,140" HREF="northern.html" ALT=
+Uganda">
+<!-- Kampala - circle zone (click the capital) -->
+ <AREA SHAPE="CIRCLE" COORDS="195,220,30"
+ HREF="Kampala.html" ALT="Kampala - Capital City">
+ <!-- Western Region - polygon zone -->
+  <AREA SHAPE="POLY" COORDS="10,200,90,180,80,320,20,340"
+  HREF="western.html" ALT="Western Uganda">
+</MAP>

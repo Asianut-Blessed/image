@@ -1,0 +1,90 @@
+<HTML>
+    <HEAD><TITLE>Sample Registration Form</TITLE></HEAD>
+    <BODY>
+        <H2>Student Registration</H2>
+
+        <FORM ACTION="https://isbat.ac.ug/register.php"METHOD="POST">
+
+            <P>First Name:<INPUT TYPE="TEXT" NAME="fname"
+            MAXILENGTH="50"></P>
+            <P>Last Name: <INPUT TYPE="TEXT" NAME="lname"
+            MAXILENGTH="50"></P>
+
+            <P><INPUT TYPE="SUBMIT"VALUE="Register Now"></P>
+        </FORM>
+
+        <form action="submit_form.php" method="post">
+            <p><b>select your enrolled courses:</b></p>
+            web technology:
+            <input type="checkbox" name="course" value="web_tech"
+            checked><br>
+            database management:
+            <input type="checkbox" name="course" value="dbms"><br>
+            software engineering:
+            <input type="checkbox" name="course" value="se"><br>
+            cloud computing:
+            <input type="checkbox" name="course" value="cloud"><br>
+            <p>password:
+             <input type="password" name="password" size="25"
+             malength="30" value="">
+            </p>
+
+            <!--Basic text input-->
+            Full Name: <input type="text" name="fullname" size="30"
+            maxilength="80"><br>
+
+            <!--with a prefilled default value-->
+            city: <input type="text" name="city" placeholder="Kampala"
+            size="20"><br>
+
+            <!--phone number(limited to 14 chars)-->
+            phone(UG): <input type="text" name="phone" size="16"
+            maxilength="14"
+                     placeholder="+2567xxxxxxxx"><br>
+
+            <!--student id-->
+            Student No. <input type="text" name="stud_id" size="12"
+            maxilength="10"><br>
+
+        </form>
+        <p><b>select your programme level</b></p>
+        certificate: <input type="radio" name="level" value="cert"><br>
+        diploma: <input type="radio" name="level" value="dip"
+        checked><br>
+        degree: <input type="radio" name="level" value="deg"><br>
+        masters: <input type="radio" name="level" value="msc"><br>
+
+        <p><b> mode of study:</b></p>
+        day: <input type="radio" name="mode" value="day"
+        checked><br>
+        evening: <input type="radio" name="mode" value="eve"><br>
+        weekend: <input type="radio" name="mode" value="wkd"><br>
+
+        full name: <input type="text" name="fname" size="30"><br>
+        date of birth <input type="text" name="dod" size="12"><br><br>
+</from>
+
+        <!--button with an onclick javascript call-->
+        <input type="button"
+        name="previewbtn"
+        value="preview my application"
+        onclick="previewapplication()">
+        <input type="button"
+        name="calcbtn"
+        value="calculate age"
+        onclick="calculateage(document.appform.dob.value )">
+     
+        <form>
+            name: <input type="text" name="name" size="30"><br>
+            email: <input type="text" name="email" size="30"><br>
+            comments: <textarea name="comments" rows="4" cols="40"></textarea>
+            <br>
+            rating:
+            <input type="radio" name="rating" value="5">exellent
+            <input type="radio" name="rating" values="3"> Average
+            <input type="radio" name="rating" vaues="1"> poor<br><br>
+            <input type="submit" value="submit feedback">
+            <input type="reset" value="clear all fields">
+        </form>
+    </BODY>
+</HTML>
